@@ -157,6 +157,8 @@ class NativeCFFI
 
 	@:cffi private static function lime_gamepad_get_device_name(id:Int):Dynamic;
 
+	@:cffi private static function lime_gamepad_rumble(id:Int, duration:Int, largeStrength:Float, smallStrength:Float):Void;
+
 	@:cffi private static function lime_gamepad_event_manager_register(callback:Dynamic, eventObject:Dynamic):Void;
 
 	@:cffi private static function lime_gzip_compress(data:Dynamic, bytes:Dynamic):Dynamic;
